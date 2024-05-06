@@ -10,7 +10,7 @@ def add_user_to_database(data):
 
     sql = """
     CREATE TABLE IF NOT EXISTS users (
-    id INTEGER PRIMARY KEY,
+    id INTEGER,
     name TEXT NOT NULL
 )    """
     cursor.execute(sql)
